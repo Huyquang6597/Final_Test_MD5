@@ -51,6 +51,8 @@
         <td>{{item.name}}</td>
         <td>{{item.description}}</td>
         <td>{{item.action}}</td>
+        <td><button (click)="delete(item.id)">Delete</button></td>
+        <td><a [routerLink]="['/detail',item.id]"> Detail</a></td>
       </tr>
       </tbody>
     </table>

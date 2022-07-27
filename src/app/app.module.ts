@@ -10,6 +10,7 @@ import { ListStudentsComponent } from './component/list-students/list-students.c
 import { NavbarComponent } from './component/blocks/navbar/navbar.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+import { DetailStudentsComponent } from './component/detail-students/detail-students.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     EditStudentsComponent,
     DeleteStudentsComponent,
     ListStudentsComponent,
-    NavbarComponent
+    NavbarComponent,
+    DetailStudentsComponent
   ],
   imports: [
     BrowserModule,

@@ -4,6 +4,7 @@ import {ListStudentsComponent} from "./component/list-students/list-students.com
 import {CreateStudentsComponent} from "./component/create-students/create-students.component";
 import {EditStudentsComponent} from "./component/edit-students/edit-students.component";
 import {DeleteStudentsComponent} from "./component/delete-students/delete-students.component";
+import {DetailStudentsComponent} from "./component/detail-students/detail-students.component";
 
 const routes: Routes = [
   {
@@ -21,6 +22,9 @@ const routes: Routes = [
   {
     path: 'delete/:id',
     component: DeleteStudentsComponent
+  },{
+    path: 'detail/:id',
+    component: DetailStudentsComponent
   }
 ];
 

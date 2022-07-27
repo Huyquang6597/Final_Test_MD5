@@ -38,7 +38,14 @@ export class ListStudentsComponent implements OnInit {
       console.log(error)
     })
   }
-
+  delete(id: number){
+    this.studentsService.delete(id).subscribe(() =>{
+      alert('Xoá thành công');
+      this.router.navigate(['home'])
+    }, error => {
+      console.log(error);
+    });
+  }
 
 
 }

@@ -63,5 +63,14 @@ export class NavbarComponent implements OnInit {
       alert("Error")
     })
   }
+  delete(id: number){
+    this.studentsService.delete(id).subscribe(() =>{
+      alert('Xoá thành công');
+      this.router.navigate(['/students'])
+      this.getAll()
+    }, error => {
+      console.log(error);
+    });
+  }
 
 }
